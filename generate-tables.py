@@ -61,7 +61,7 @@ def gen_trajectories(data):
             t1 = data[p1][2]
             t2 = data[p2][2]
             assert(t1 <= t2)
-            if (t2 - t1).seconds < TGAP:
+            if (t2 - t1).total_seconds() < TGAP:
                 trajs[-1].append(p2)
             else:
                 trajs.append([p2])
@@ -112,7 +112,7 @@ def dump_trajectories(fout1, fout2, trajlist, data):
     """Save Trajectories"""
     # data table 1
     with open(fout1, 'w') as f1:
-        f1.write('Trajectory_ID, Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, Marker(photo=0, video=1), URL\n')
+        f1.write('Trajectory_ID, Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, Marker(photo=0 video=1), URL\n')
         for i, dlist in enumerate(trajlist):
             assert(len(dlist) > 0)
             tid = str(i)

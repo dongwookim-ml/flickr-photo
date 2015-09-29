@@ -1,100 +1,77 @@
 #!/usr/bin/env python3
 import sys
+import numpy as np
+import pandas as pd
 from fastkml import kml, styles
 from shapely.geometry import Point, LineString
 
 
-def load_data(ftable1, ftable2):
+def load_traj(ftable1, ftable2):
     """Load data"""
-    trajdict1 = dict()
-    trajdict2 = dict()
-
-    # Trajectory_ID,User_ID,#Photo,Start_Time,Travel_Distance,Total_Time,Average_Speed
-    firstline = True
-    with open(ftable2, 'r') as f2:
-        for line in f2:
-            if firstline: 
-                firstline = False
-                continue
-            t = line.strip().split(',')
-            assert(len(t) == 7)
-            speed = float(t[6])
-            if speed < 1e-6: continue # do not visualise trajectories at a point
-            tid = int(t[0])
-            uid = t[1]
-            stime = t[3]
-            dist = t[4]
-            ttime = t[5]
-            trajdict2[tid] = (uid, stime, dist, ttime, speed)
-
-    #Trajectory_ID,Photo_ID,User_ID,Timestamp,Longitude,Latitude,Accuracy,Marker,URL
-    firstline = True
-    with open(ftable1, 'r') as f1:
-        for line in f1:
-            if firstline: 
-                firstline = False
-                continue
-            t = line.strip().split(',')
-            assert(len(t) == 9)
-            tid = int(t[0])
-            if tid not in trajdict2: continue
-            if tid not in trajdict1: trajdict1[tid] = []
-            pid = t[1]
-            uid = t[2]
-            time = t[3]
-            lng = float(t[4])
-            lat = float(t[5])
-            acc = int(t[6])
-            marker = int(t[7])
-            url = t[8]
-            trajdict1[tid].append((tid, pid, uid, time, lng, lat, acc, marker, url))
-    return trajdict1, trajdict2
+    today = pd.datetime.strftime(pd.datetime.today(), '%Y%m%d')
+    traj_data = pd.read_csv(ftable1, parse_dates=[3], skipinitialspace=True)
+    traj_stats = pd.read_csv(ftable2, parse_dates=[3, 5], skipinitialspace=True)
+    traj_stats['Total_Time(HH:MM:SS)'] -= pd.to_datetime(today)
+    traj_stats['Total_Time(HH:MM:SS)'] = traj_stats['Total_Time(HH:MM:SS)'].astype('timedelta64[m]')
+    traj_stats.rename(columns={'Total_Time(HH:MM:SS)':'Total_Time(min)'}, inplace=True)
+    return traj_data, traj_stats
 
 
-def gen_kml(trajdict1, trajdict2, keylist, fname):
+def gen_kml(fname, traj_data, traj_stats, traj_id_list, traj_name_list=None):
     """Generate KML file"""
+    assert(len(traj_id_list) > 0)
+    if traj_name_list: 
+        assert(len(traj_id_list) == len(traj_name_list))
+
     k = kml.KML()
     ns = '{http://www.opengis.net/kml/2.2}'
     stid = 'style1'
     # colors in KML: aabbggrr, aa=00 is fully transparent
     # developers.google.com/kml/documentation/kmlreference?hl=en#colorstyle
     st = styles.Style(id=stid, styles=[styles.LineStyle(color='2f0000ff', width=3)]) # transparent red
-    d = kml.Document(ns, '001', 'Trajectories', 'Trajectory visualization', styles=[st])
-    k.append(d)
+    doc = kml.Document(ns, '001', 'Trajectories', 'Trajectory visualization', styles=[st])
+    k.append(doc)
 
-    pm_photo = []
+    stats = traj_stats[traj_stats['Trajectory_ID'].isin(traj_id_list)]
+    assert(stats.shape[0] == len(traj_id_list))
+
     pm_traj = []
-    for tid in keylist:
-        assert(tid in trajdict1)
-        assert(tid in trajdict2)
-        pdata = trajdict1[tid]
-        trajcoords = [(p[4], p[5]) for p in pdata]
-        name = 'Trajectory_' + str(tid)
-        desc = 'User_ID: '              + str(trajdict2[tid][0]) + \
-               '<br/>Start_Time: '      + str(trajdict2[tid][1]) + \
-               '<br/>Travel_Distance: ' + str(trajdict2[tid][2]) + ' km' + \
-               '<br/>Total_Time: '      + str(trajdict2[tid][3]) + \
-               '<br/>Average_Speed: '   + str(trajdict2[tid][4]) + ' km/h' + \
-               '<br/>#Photos: ' + str(len(pdata)) + '<br/>Photos: ' + str([p[1] for p in pdata])
-        pm = kml.Placemark(ns, str(tid), name, desc, styleUrl='#' + stid)
-        pm.geometry = LineString(trajcoords)
+    pm_photo = []
+
+    for i in range(len(stats.index)):
+        ri = stats.index[i]
+        traj_id = stats.ix[ri]['Trajectory_ID']
+        photos = traj_data[traj_data['Trajectory_ID'] == traj_id]
+        lngs = [lng for lng in photos['Longitude'].tolist()]
+        lats = [lat for lat in photos['Latitude'].tolist()]
+        name = 'Trajectory_' + str(traj_id)
+        if traj_name_list: name += '_' + traj_name_list[i]
+        desc = 'User_ID: '              + str(stats.ix[ri]['User_ID']) + \
+               '<br/>Start_Time: '      + str(stats.ix[ri]['Start_Time']) + \
+               '<br/>Travel_Distance: ' + str(stats.ix[ri]['Travel_Distance(km)']) + ' km' + \
+               '<br/>Total_Time: '      + str(stats.ix[ri]['Total_Time(min)']) + ' min' + \
+               '<br/>Average_Speed: '   + str(stats.ix[ri]['Average_Speed(km/h)']) + ' km/h' + \
+               '<br/>#Photos: '         + str(stats.ix[ri]['#Photo']) + \
+               '<br/>Photos: '          + str(photos['Photo_ID'].tolist())
+        pm = kml.Placemark(ns, str(traj_id), name, desc, styleUrl='#' + stid)
+        pm.geometry = LineString([(lngs[j], lats[j]) for j in range(len(lngs))])
         pm_traj.append(pm)
 
-        for p in pdata:
-            name = 'Photo_' + p[1]
-            desc = 'Trajectory_ID: ' + str(p[0]) + \
-                   '<br/>Photo_ID: ' + p[1] + \
-                   '<br/>User_ID: ' + p[2] + \
-                   '<br/>Timestamp: ' + p[3] + \
-                   '<br/>Coordinates: (' + str(p[4]) + ', ' + str(p[5]) + ')' + \
-                   '<br/>Accuracy: ' + str(p[6]) + \
-                   '<br/>URL: ' + str(p[8])
-            pm = kml.Placemark(ns, p[1], name, desc)
-            pm.geometry = Point(p[4], p[5])
+        for rj in photos.index:
+            name = 'Photo_' + str(photos.ix[rj]['Photo_ID'])
+            desc = 'Trajectory_ID: '  + str(traj_id) + \
+                   '<br/>Photo_ID: '  + str(photos.ix[rj]['Photo_ID']) + \
+                   '<br/>User_ID: '   + str(photos.ix[rj]['User_ID']) + \
+                   '<br/>Timestamp: ' + str(photos.ix[rj]['Timestamp']) + \
+                   '<br/>Coordinates: (' + str(photos.ix[rj]['Longitude']) + ', ' + str(photos.ix[rj]['Latitude']) + ')' + \
+                   '<br/>Accuracy: '  + str(photos.ix[rj]['Accuracy']) + \
+                   '<br/>URL: '       + str(photos.ix[rj]['URL'])
+            pm = kml.Placemark(ns, str(photos.ix[rj]['Photo_ID']), name, desc)
+            pm.geometry = Point(photos.ix[rj]['Longitude'], photos.ix[rj]['Latitude'])
             pm_photo.append(pm)
 
-    for pm in pm_traj:  d.append(pm)
-    for pm in pm_photo: d.append(pm)
+    for pm in pm_traj:  doc.append(pm)
+    for pm in pm_photo: doc.append(pm)
 
     kmlstr = k.to_string(prettyprint=True)
     with open(fname, 'w') as f:
@@ -102,38 +79,54 @@ def gen_kml(trajdict1, trajdict2, keylist, fname):
         f.write(kmlstr)
 
 
+def main(ftable1, ftable2):
+    """Main Procedure"""
+    # load data
+    traj_data, traj_stats = load_traj(ftable1, ftable2)
+
+    # remove trajctories with only one photos
+    traj_stats = traj_stats[traj_stats['#Photo'] > 1]
+
+    # remove trajctories with zero distance
+    traj_stats = traj_stats[traj_stats['Travel_Distance(km)'] > 1e-4]
+
+    # trajectory with the most number of photos 
+    ri = traj_stats['#Photo'].idxmax()
+    traj_id = traj_stats.ix[ri]['Trajectory_ID']
+    fname = 'most_photos.kml'
+    gen_kml(fname, traj_data, traj_stats, [traj_id], ['most_photos'])
+
+    # trajectory took the longest time
+    ri = traj_stats['Total_Time(min)'].idxmax()
+    traj_id = traj_stats.ix[ri]['Trajectory_ID']
+    fname = 'longest_time.kml'
+    gen_kml(fname, traj_data, traj_stats, [traj_id], ['longest_time'])
+
+    # trajectory took the longest distance
+    ri = traj_stats['Travel_Distance(km)'].idxmax()
+    traj_id = traj_stats.ix[ri]['Trajectory_ID']
+    fname = 'longest_distance.kml'
+    gen_kml(fname, traj_data, traj_stats, [traj_id], ['longest_distance'])
+
+    # trajectory has the highest speed
+    ri = traj_stats['Average_Speed(km/h)'].idxmax()
+    traj_id = traj_stats.ix[ri]['Trajectory_ID']
+    fname = 'highest_speed.kml'
+    gen_kml(fname, traj_data, traj_stats, [traj_id], ['highest_speed'])
+
+    # random 5 trajectories
+    traj_id_list = traj_stats['Trajectory_ID'].sample(n=5).tolist()
+    fname = 'random5.kml'
+    gen_kml(fname, traj_data, traj_stats, traj_id_list)
+
+
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print('Usage:', sys.argv[0], 'TABLE1_FILE  TABLE2_FILE')
-        print('For example: ', sys.argv[0], 'Melb-table1.csv  Melb-table2.csv')
+        print('Usage: ', sys.argv[0], 'TABLE1_FILE  TABLE2_FILE')
+        print('e.g. : ', sys.argv[0], 'Melb-table1.csv  Melb-table2.csv')
         sys.exit(0)
 
     ftable1 = sys.argv[1]
     ftable2 = sys.argv[2]
-    N = 50
-
-    # for test
-    #trajdict = dict() 
-    #for i in range(35): trajdict[i+1] = i
-
-    trajdict1, trajdict2 = load_data(ftable1, ftable2)
-    inc = int(len(trajdict1.keys()) / N)
-    keys = []
-    keys.append([])
-    idx = 0
-    end = idx + inc
-    for k in sorted(trajdict1.keys()):
-        idx += 1
-        if idx > end: 
-            end += inc
-            if end > len(trajdict1.keys()): end = len(trajdict1.keys())
-            keys.append([k])
-        else: keys[-1].append(k)
-
-    #print(trajdict)
-    #print(keys)
-
-    kmlfiles = ['Melb-traj-part' + str(i+1) + '.kml' for i in range(N)]
-    for i in range(N):
-        gen_kml(trajdict1, trajdict2, keys[i], kmlfiles[i])
+    main(ftable1, ftable2)
 
