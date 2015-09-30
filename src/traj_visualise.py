@@ -48,9 +48,9 @@ def gen_kml(fname, traj_data, traj_stats, traj_id_list, traj_name_list=None):
         if traj_name_list: name += '_' + traj_name_list[i]
         desc = 'User_ID: '              + str(stats.ix[ri]['User_ID']) + \
                '<br/>Start_Time: '      + str(stats.ix[ri]['Start_Time']) + \
-               '<br/>Travel_Distance: ' + str(stats.ix[ri]['Travel_Distance(km)']) + ' km' + \
+               '<br/>Travel_Distance: ' + str(round(stats.ix[ri]['Travel_Distance(km)'], 2)) + ' km' + \
                '<br/>Total_Time: '      + str(stats.ix[ri]['Total_Time(min)']) + ' min' + \
-               '<br/>Average_Speed: '   + str(stats.ix[ri]['Average_Speed(km/h)']) + ' km/h' + \
+               '<br/>Average_Speed: '   + str(round(stats.ix[ri]['Average_Speed(km/h)'], 2)) + ' km/h' + \
                '<br/>#Photos: '         + str(stats.ix[ri]['#Photo']) + \
                '<br/>Photos: '          + str(photos['Photo_ID'].tolist())
         pm = kml.Placemark(ns, str(traj_id), name, desc, styleUrl='#' + stid)
