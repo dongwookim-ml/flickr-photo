@@ -31,8 +31,9 @@ def load_data(fname):
     return data
 
 
-def gen_trajectories(data):
+def gen_trajectories(data, time_gap=8):
     """Generate trajectories"""
+    assert(time_gap > 0)
     udict = dict()
     
     # group photos by user ID
@@ -46,7 +47,7 @@ def gen_trajectories(data):
         dlist.sort(key=lambda idx: data[idx][2])
 
     # construct trajectories by splitting user's travel history
-    TGAP = 8 * 60 * 60  # 8 hours
+    TGAP = time_gap * 60 * 60  # 8 hours by default
     trajs = []
     for uid in sorted(udict.keys()): # sort by user ID
         dlist = udict[uid]
@@ -68,16 +69,18 @@ def gen_trajectories(data):
     return trajs
 
 
-def filter_trajectories(lng_min, lat_min, lng_max, lat_max, trajlist, data):
+def filter_trajectories(lng_min, lat_min, lng_max, lat_max, trajlist, data, min_photos_per_traj=1):
     """Drop Trajectories which are completely out of the bounding box:
        [(lng_min, lat_min), (lng_max, lat_max)]
     """
     assert(lng_min < lng_max)
     assert(lat_min < lat_max)
+    assert(min_photos_per_traj >= 1)
 
     indexes = []
     for i in range(len(trajlist)):
         traj = trajlist[i]
+        if len(traj) < min_photos_per_traj: continue
         anyin = False
         for p in traj:
             assert(p in range(len(data)))
@@ -106,6 +109,26 @@ def calc_dist(longitude1, latitude1, longitude2, latitude2):
     dist =  2 * radius * math.asin( math.sqrt( 
                 (math.sin(0.5*dlat))**2 + math.cos(lat1) * math.cos(lat2) * (math.sin(0.5*dlng))**2 ))
     return dist
+
+
+def gen_timediffstr(t1, t2):
+    """generate time difference string: %HH:%MM:%SS"""
+    assert(isinstance(t1, datetime))
+    assert(isinstance(t2, datetime))
+    tdelta = None
+    if t1 > t2:
+        tdelta = t1 - t2
+    else:
+        tdelta = t2 - t1
+    seconds = tdelta.total_seconds()
+    hh = int(seconds / 3600)
+    mm = int((seconds % 3600) / 60)
+    ss = int(seconds % 60)
+    if hh < 10: hh = '0' + str(hh)
+    if mm < 10: mm = '0' + str(mm)
+    if ss < 10: ss = '0' + str(ss)
+    tdstr = str(hh) + ':' + str(mm) + ':' + str(ss)
+    return tdstr
 
 
 def dump_trajectories(fout1, fout2, trajlist, data):
@@ -144,36 +167,52 @@ def dump_trajectories(fout1, fout2, trajlist, data):
             t1 = data[p1][2]
             t2 = data[p2][2]
             assert(t1 <= t2)
-            tdelta = (t2 - t1).seconds
-            hh = int(tdelta / 3600)
-            mm = int(tdelta / 60) - hh * 60
-            ss = tdelta % 60
-            if hh < 10: hh = '0' + str(hh)
-            if mm < 10: mm = '0' + str(mm)
-            if ss < 10: ss = '0' + str(ss)
-            ttime = str(hh) + ':' + str(mm) + ':' + str(ss)
+            ttime = gen_timediffstr(t1, t2)
+            seconds = (t2 - t1).total_seconds()
             speed = None
-            if tdelta == 0: speed = 0
-            else:           speed = dist * 60 * 60 / tdelta  # km/h
+            if seconds == 0: 
+                speed = 0
+            else:
+                speed = dist * 60 * 60 / seconds  # km/h
             f2.write(tid + ',' + uid + ',' + num + ',' + str(t1) + ',' + \
-                    str(dist) + ',' + ttime + ',' + str(speed) + '\n')
+                     str(dist) + ',' + ttime + ',' + str(speed) + '\n')
+
+
+def main(fin, fout1, fout2, longitude_min, latitude_min, longitude_max, latitude_max, min_photos_per_traj=1, time_gap=8):
+    """Main Procedure"""
+    assert(longitude_min < longitude_max)
+    assert(latitude_min < latitude_max)
+    assert(min_photos_per_traj >= 1)
+    assert(time_gap > 0)
+    data = load_data(fin)
+    trajs = gen_trajectories(data, time_gap)
+    trajs = filter_trajectories(lng_min, lat_min, lng_max, lat_max, trajs, data, min_photos_per_traj)
+    dump_trajectories(fout1, fout2, trajs, data)
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) != 2 and len(sys.argv) != 8:
         print('Usage:', sys.argv[0], 'BIGBOX_DATA_FILE')
+        print('Usage:', sys.argv[0], \
+              'BIGBOX_DATA_FILE  MIN_LONGITUDE  MIN_LATITUDE  MAX_LONGITUDE  MAX_LATITUDE  MIN_PHOTOS_PER_TRAJECTORY  TIME_GAP(hour)')
         sys.exit(0)
-    
+
     fin = sys.argv[1]
     fout1 = './Melb-table1.csv'
     fout2 = './Melb-table2.csv'
-    lng_min = 144.597363
-    lat_min = -38.072257
-    lng_max = 145.360413
-    lat_max = -37.591764
 
-    data = load_data(fin)
-    trajs = gen_trajectories(data)
-    trajs = filter_trajectories(lng_min, lat_min, lng_max, lat_max, trajs, data)
-    dump_trajectories(fout1, fout2, trajs, data)
+    if len(sys.argv) == 2:
+        lng_min = 144.597363
+        lat_min = -38.072257
+        lng_max = 145.360413
+        lat_max = -37.591764
+        main(fin, fout1, fout2, lng_min, lat_min, lng_max, lat_max)
+    else:
+        lng_min = float(sys.argv[2])
+        lat_min = float(sys.argv[3])
+        lng_max = float(sys.argv[4])
+        lng_max = float(sys.argv[5])
+        min_photos_per_traj = int(sys.argv[6])
+        time_gap = float(sys.argv[7])
+        main(fin, fout1, fout2, lng_min, lat_min, lng_max, lat_max, min_photos_per_traj, time_gap)
 
