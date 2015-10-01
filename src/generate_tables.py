@@ -16,8 +16,12 @@ def load_data(fname):
     # * Photos/video marker (0 = photo, 1 = video)
 
     data = []
+    firstline = True
     with open(fname, 'r') as f:
         for line in f:
+            if firstline:
+                firstline = False
+                continue
             t = line.strip().split(',')
             pid = t[0].strip()
             uid = t[1].strip()
@@ -111,26 +115,6 @@ def calc_dist(longitude1, latitude1, longitude2, latitude2):
     return dist
 
 
-def gen_timediffstr(t1, t2):
-    """generate time difference string: %HH:%MM:%SS"""
-    assert(isinstance(t1, datetime))
-    assert(isinstance(t2, datetime))
-    tdelta = None
-    if t1 > t2:
-        tdelta = t1 - t2
-    else:
-        tdelta = t2 - t1
-    seconds = tdelta.total_seconds()
-    hh = int(seconds / 3600)
-    mm = int((seconds % 3600) / 60)
-    ss = int(seconds % 60)
-    if hh < 10: hh = '0' + str(hh)
-    if mm < 10: mm = '0' + str(mm)
-    if ss < 10: ss = '0' + str(ss)
-    tdstr = str(hh) + ':' + str(mm) + ':' + str(ss)
-    return tdstr
-
-
 def dump_trajectories(fout1, fout2, trajlist, data):
     """Save Trajectories"""
     # data table 1
@@ -155,7 +139,7 @@ def dump_trajectories(fout1, fout2, trajlist, data):
 
     # data table 2
     with open(fout2, 'w') as f2:
-        f2.write('Trajectory_ID, User_ID, #Photo, Start_Time, Travel_Distance(km), Total_Time(HH:MM:SS), Average_Speed(km/h)\n')
+        f2.write('Trajectory_ID, User_ID, #Photo, Start_Time, Travel_Distance(km), Total_Time(min), Average_Speed(km/h)\n')
         for i, dlist in enumerate(trajlist):
             assert(len(dlist) > 0)
             tid = str(i)
@@ -167,15 +151,15 @@ def dump_trajectories(fout1, fout2, trajlist, data):
             t1 = data[p1][2]
             t2 = data[p2][2]
             assert(t1 <= t2)
-            ttime = gen_timediffstr(t1, t2)
             seconds = (t2 - t1).total_seconds()
+            ttime = seconds / 60  # minutes
             speed = None
             if seconds == 0: 
                 speed = 0
             else:
                 speed = dist * 60 * 60 / seconds  # km/h
             f2.write(tid + ',' + uid + ',' + num + ',' + str(t1) + ',' + \
-                     str(dist) + ',' + ttime + ',' + str(speed) + '\n')
+                     str(dist) + ',' + str(ttime) + ',' + str(speed) + '\n')
 
 
 def main(fin, fout1, fout2, longitude_min, latitude_min, longitude_max, latitude_max, min_photos_per_traj=1, time_gap=8):
@@ -186,7 +170,7 @@ def main(fin, fout1, fout2, longitude_min, latitude_min, longitude_max, latitude
     assert(time_gap > 0)
     data = load_data(fin)
     trajs = gen_trajectories(data, time_gap)
-    trajs = filter_trajectories(lng_min, lat_min, lng_max, lat_max, trajs, data, min_photos_per_traj)
+    trajs = filter_trajectories(longitude_min, latitude_min, longitude_max, latitude_max, trajs, data, min_photos_per_traj)
     dump_trajectories(fout1, fout2, trajs, data)
 
 

@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 import sys
+import random
 import numpy as np
 import pandas as pd
+from datetime import datetime
 from fastkml import kml, styles
 from shapely.geometry import Point, LineString
 
 
 def load_traj(ftable1, ftable2):
     """Load data"""
-    today = pd.datetime.strftime(pd.datetime.today(), '%Y%m%d')
-    traj_data = pd.read_csv(ftable1, parse_dates=[3], skipinitialspace=True)
-    traj_stats = pd.read_csv(ftable2, parse_dates=[3, 5], skipinitialspace=True)
-    traj_stats['Total_Time(HH:MM:SS)'] -= pd.to_datetime(today)
-    traj_stats['Total_Time(HH:MM:SS)'] = traj_stats['Total_Time(HH:MM:SS)'].astype('timedelta64[m]')
-    traj_stats.rename(columns={'Total_Time(HH:MM:SS)':'Total_Time(min)'}, inplace=True)
+    traj_data  = pd.read_csv(ftable1, parse_dates=[3], skipinitialspace=True)
+    traj_stats = pd.read_csv(ftable2, parse_dates=[3], skipinitialspace=True)
     return traj_data, traj_stats
 
 
@@ -49,7 +47,7 @@ def gen_kml(fname, traj_data, traj_stats, traj_id_list, traj_name_list=None):
         desc = 'User_ID: '              + str(stats.ix[ri]['User_ID']) + \
                '<br/>Start_Time: '      + str(stats.ix[ri]['Start_Time']) + \
                '<br/>Travel_Distance: ' + str(round(stats.ix[ri]['Travel_Distance(km)'], 2)) + ' km' + \
-               '<br/>Total_Time: '      + str(stats.ix[ri]['Total_Time(min)']) + ' min' + \
+               '<br/>Total_Time: '      + str(round(stats.ix[ri]['Total_Time(min)'], 2)) + ' min' + \
                '<br/>Average_Speed: '   + str(round(stats.ix[ri]['Average_Speed(km/h)'], 2)) + ' km/h' + \
                '<br/>#Photos: '         + str(stats.ix[ri]['#Photo']) + \
                '<br/>Photos: '          + str(photos['Photo_ID'].tolist())
@@ -115,7 +113,7 @@ def main(ftable1, ftable2):
     gen_kml(fname, traj_data, traj_stats, [traj_id], ['highest_speed'])
 
     # random 5 trajectories
-    traj_id_list = traj_stats['Trajectory_ID'].sample(n=5).tolist()
+    traj_id_list = traj_stats['Trajectory_ID'].sample(n=5).tolist() # requires pandas version >= 0.16.1
     fname = 'random5.kml'
     gen_kml(fname, traj_data, traj_stats, traj_id_list)
 

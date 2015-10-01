@@ -3,12 +3,13 @@ import unittest
 import tempfile
 import os
 from datetime import datetime
-from generate_tables import load_data, gen_trajectories, filter_trajectories, calc_dist, gen_timediffstr
+from generate_tables import load_data, gen_trajectories, filter_trajectories, calc_dist
 
 
 class GenTablesTestCase(unittest.TestCase):
     def setUp(self):
         datastr = """\
+Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, URL, Marker(photo=0 video=1)
 4257224959,26303188@N00,2010-01-09 09:39:19.0,145.314132,-37.765855,16,http://www.flickr.com/photos/26303188@N00/4257224959/,0
 4258044588,26303188@N00,2010-01-09 10:08:50.0,145.314042,-37.765869,16,http://www.flickr.com/photos/26303188@N00/4258044588/,0
 4257973354,26303188@N00,2010-01-09 09:36:11.0,145.314132,-37.765855,16,http://www.flickr.com/photos/26303188@N00/4257973354/,0
@@ -27,19 +28,15 @@ class GenTablesTestCase(unittest.TestCase):
         self.result_filtraj = [[2, 0, 1], [5, 3, 4], [11, 10], [7, 8]]
 
         fi = tempfile.NamedTemporaryFile(mode='w', delete=False)
-        #fo = tempfile.NamedTemporaryFile(delete=False)
         fi.write(datastr)
         self.fin = fi.name
-        #self.fout = fo.name
         fi.close()
-        #fo.close()
 
         self.rawdata = load_data(self.fin)
 
 
     def tearDown(self):
         os.unlink(self.fin)
-        #os.unlink(self.fout)
 
     
     def test_gen_trajectories(self):
@@ -69,19 +66,6 @@ class GenTablesTestCase(unittest.TestCase):
                 acc = 1 - abs(dist - dists[i]) / dists[i]
                 #print('\n', dist, dists[i], acc)
                 self.assertTrue(acc > 0.9)
-
-
-    def test_gen_timediffstr(self):
-        datetimestr = ['2012-11-01 11:12:25.0', '2012-11-01 18:10:12.0', '2015-09-30 13:27:50.0']
-        datetimes = [datetime.strptime(x, '%Y-%m-%d %H:%M:%S.%f') for x in datetimestr]
-        index = [(0, 1), (0, 2), (1, 2)]
-        diffstr = ['06:57:47', '25514:15:25', '25507:17:38']
-        for i in range(len(index)):
-            with self.subTest():
-                t1 = datetimes[index[i][0]]
-                t2 = datetimes[index[i][1]]
-                tdstr = gen_timediffstr(t1, t2)
-                self.assertEqual(tdstr, diffstr[i])
 
 
 if __name__ == '__main__':

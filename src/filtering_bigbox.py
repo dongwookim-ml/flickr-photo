@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 import sys
+from datetime import datetime
 
-def filtering(lng_min, lat_min, lng_max, lat_max, fin, fout):
+def filtering(lng_min, lat_min, lng_max, lat_max, time_min, time_max, fin, fout):
     """Filtering out all records outside the bounding box: 
        [(lng_min, lat_min), (lng_max, lat_max)]
     """
     assert(lng_min < lng_max)
     assert(lat_min < lat_max)
+    assert(isinstance(time_min, datetime))
+    assert(isinstance(time_max, datetime))
+    assert(time_min < time_max)
     
     # 1    * Photo/video identifier 
     # 2    * User NSID
@@ -18,6 +22,7 @@ def filtering(lng_min, lat_min, lng_max, lat_max, fin, fout):
     # 23   * Photos/video marker (0 = photo, 1 = video)
 
     with open(fout, 'w') as fo:
+        #fo.write('Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, URL, Marker(photo=0 video=1)\n')
         with open(fin, 'r') as fi:
             for line in fi:
                 t = line.strip().split('\t')
@@ -40,6 +45,9 @@ def filtering(lng_min, lat_min, lng_max, lat_max, fin, fout):
                 if lng < lng_min or lng > lng_max: continue
                 if lat < lat_min or lat > lat_max: continue
 
+                dt = datetime.strptime(time, '%Y-%m-%d %H:%M:%S.%f')
+                if dt < time_min or dt > time_max: continue
+
                 fo.write(pid + ',' + uid + ',' + time + ',' + \
                          str(lng) + ',' + str(lat) + ',' + \
                          acc + ',' + url + ',' + marker + '\n')
@@ -56,6 +64,8 @@ if __name__ == '__main__':
     lat_min = -39.3 
     lng_max = 147.1
     lat_max = -35.8 
+    time_min = datetime.strptime('2000-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
+    time_max = datetime.strptime('2015-03-05 23:59:59', '%Y-%m-%d %H:%M:%S')
     
-    filtering(lng_min, lat_min, lng_max, lat_max, fin, fout)
+    filtering(lng_min, lat_min, lng_max, lat_max, time_min, time_max, fin, fout)
 

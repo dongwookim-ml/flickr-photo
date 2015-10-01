@@ -9,8 +9,8 @@ from traj_visualise import load_traj, gen_kml
 class TrajVisualiseTestCase(unittest.TestCase):
     def setUp(self):
         t2data = """\
-Trajectory_ID, User_ID, #Photo, Start_Time, Travel_Distance(km), Total_Time(HH:MM:SS), Average_Speed(km/h)
-26519,99804259@N00,3,2013-12-28 19:31:54,0.44294172719428504,01:24:01,0.3163241852607471
+Trajectory_ID, User_ID, #Photo, Start_Time, Travel_Distance(km), Total_Time(min), Average_Speed(km/h)
+26519,99804259@N00,3,2013-12-28 19:31:54,0.44294172719428504,84.01666666666667,0.3163241852607471
 """
         t1data = """\
 Trajectory_ID, Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, Marker(photo=0 video=1), URL
@@ -33,7 +33,7 @@ Trajectory_ID, Photo_ID, User_ID, Timestamp, Longitude, Latitude, Accuracy, Mark
 </Style>
 <Placemark id="26519">
 <name>Trajectory_26519</name>
-<description>User_ID: 99804259@N00&lt;br/&gt;Start_Time: 2013-12-28 19:31:54&lt;br/&gt;Travel_Distance: 0.44 km&lt;br/&gt;Total_Time: 84.0 min&lt;br/&gt;Average_Speed: 0.32 km/h&lt;br/&gt;#Photos: 3&lt;br/&gt;Photos: [11617521194, 11617542904, 11617370033]</description>
+<description>User_ID: 99804259@N00&lt;br/&gt;Start_Time: 2013-12-28 19:31:54&lt;br/&gt;Travel_Distance: 0.44 km&lt;br/&gt;Total_Time: 84.02 min&lt;br/&gt;Average_Speed: 0.32 km/h&lt;br/&gt;#Photos: 3&lt;br/&gt;Photos: [11617521194, 11617542904, 11617370033]</description>
 <visibility>1</visibility>
 <styleUrl>#style1</styleUrl>
 <LineString>
