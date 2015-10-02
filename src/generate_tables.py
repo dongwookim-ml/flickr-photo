@@ -148,7 +148,10 @@ def dump_trajectories(fout1, fout2, trajlist, data):
             p2 = dlist[-1]
             uid = str(data[p1][1])
             num = str(len(dlist))
-            dist = calc_dist(data[p1][3], data[p1][4], data[p2][3], data[p2][4])  # km
+            dist = 0
+            if len(dlist) > 1:
+                for j in range(len(dlist)-1):
+                    dist += calc_dist(data[dlist[j]][3], data[dlist[j]][4], data[dlist[j+1]][3], data[dlist[j+1]][4])  # km
             t1 = data[p1][2]
             t2 = data[p2][2]
             assert(t1 <= t2)
