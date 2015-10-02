@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import math
+import os.path
 from datetime import datetime
 
 
@@ -182,8 +183,9 @@ if __name__ == '__main__':
         sys.exit(0)
 
     fin = sys.argv[1]
-    fout1 = './Melb-table1.csv'
-    fout2 = './Melb-table2.csv'
+    path, filename = os.path.split(fin)
+    fout1 = os.path.join(path, './Melb-table1.csv')
+    fout2 = os.path.join(path, './Melb-table2.csv')
 
     if len(sys.argv) == 2:
         lng_min = 144.597363
@@ -195,7 +197,7 @@ if __name__ == '__main__':
         lng_min = float(sys.argv[2])
         lat_min = float(sys.argv[3])
         lng_max = float(sys.argv[4])
-        lng_max = float(sys.argv[5])
+        lat_max = float(sys.argv[5])
         min_photos_per_traj = int(sys.argv[6])
         time_gap = float(sys.argv[7])
         main(fin, fout1, fout2, lng_min, lat_min, lng_max, lat_max, min_photos_per_traj, time_gap)
