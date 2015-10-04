@@ -1,5 +1,5 @@
 #Flickr-Photo
-Extract trajectories of users from geo-tagged photo/video data from [YFCC100M](https://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67) dataset.
+Extract users trajectories from geo-tagged photo/video data of [YFCC100M](https://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67) dataset.
 
 --------------------
 ## Trajectory construction
