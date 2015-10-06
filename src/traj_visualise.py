@@ -120,8 +120,8 @@ def main(ftable1, ftable2):
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print('Usage: ', sys.argv[0], 'TABLE1_FILE  TABLE2_FILE')
-        print('e.g. : ', sys.argv[0], 'Melb-table1.csv  Melb-table2.csv')
+        print('Usage: ', sys.argv[0], 'TRAJECTORY_PHOTO_FILE  TRAJECTORY_STATS_FILE')
+        print('e.g. : ', sys.argv[0], 'trajectory_photos.csv  trajectory_stats.csv')
         sys.exit(0)
 
     ftable1 = sys.argv[1]

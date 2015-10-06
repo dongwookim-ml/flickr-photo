@@ -187,8 +187,8 @@ if __name__ == '__main__':
 
     fin = sys.argv[1]
     path, filename = os.path.split(fin)
-    fout1 = os.path.join(path, './Melb-table1.csv')
-    fout2 = os.path.join(path, './Melb-table2.csv')
+    fout1 = os.path.join(path, './trajectory_photos.csv')
+    fout2 = os.path.join(path, './trajectory_stats.csv')
 
     if len(sys.argv) == 2:
         lng_min = 144.597363

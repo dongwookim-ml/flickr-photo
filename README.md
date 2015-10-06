@@ -20,7 +20,7 @@ Some statistics and analysis about the extracted trajectories are provided in [`
 ###```data``` Data files
  * ```Melbourne-bbox.kml```   The two (big/small) bounding boxes of Melbourne used for extracting relevant photos/videos from original YFCC100M dataset
  * ```Melbourne-bigbox.csv```   Photos/videos taken inside of the big bounding box, output of ```src/filtering_bigbox.py```
- * ```Melb-table1.csv```  Trajectorie file, output of ```src/generate_tables.py```
+ * ```trajectory_photos.csv```  Trajectorie file, output of ```src/generate_tables.py```
   * Each line represents one photo/video with following information
   * Trajectory_ID: trajectory ID of entry (multiple entries consist single trajectory)
   * Photo_ID: Unique Photo(Video) ID of entry
@@ -31,7 +31,7 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * Accuracy: GPS Accuracy level (16 - the most accurate, 1 - the least accurate)
   * Marker: 0 if the entry is photo, 1 if the entry is video
   * URL: flickr URL to the entry
- * ```Melb-table2.csv```  Stats for each trajectory, output of ```src/generate_tables.py```
+ * ```trajectory_stats.csv```  Stats for each trajectory, output of ```src/generate_tables.py```
   * Each line shows statistics about corresponding trajectory
   * Trajectory_ID: Unique trajectory ID
   * User_ID: User ID
