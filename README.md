@@ -13,7 +13,7 @@ Trajectories are constructed through following three major steps (More detail de
 --------------------
 ## Trajectory Analysis
 
-Some statistics and analysis about the extracted trajectories are provided in [`src/trajectory_construction.ipynb`](https://github.com/arongdari/flickr-photo/blob/master/src/flickr_analysis.ipynb)
+Some statistics and analysis about the extracted trajectories are provided in [`src/flickr_analysis.ipynb`](https://github.com/arongdari/flickr-photo/blob/master/src/flickr_analysis.ipynb)
 
 --------------------
 ## Output files
