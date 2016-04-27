@@ -1,0 +1,89 @@
+poiID,poiName,poiTheme,poiLat,poiLon,poiURL,suburb
+0,Arts Precinct,City precincts,-37.821670000000005,144.96778,https://en.wikipedia.org/wiki/Melbourne_Arts_Precinct,Southbank
+1,Docklands,City precincts,-37.817,144.946,"https://en.wikipedia.org/wiki/Docklands,_Victoria",Docklands
+2,Government Precinct,City precincts,-37.8119,144.97299999999998,"https://en.wikipedia.org/wiki/Spring_Street,_Melbourne",Melbourne
+3,Little Italy,City precincts,-37.79972,144.96694,"https://en.wikipedia.org/wiki/Little_Italy,_Melbourne",Carlton
+4,RMIT City,City precincts,-37.80778,144.96333,https://en.wikipedia.org/wiki/City_campus_of_the_Royal_Melbourne_Institute_of_Technology,Melbourne
+5,Southbank,City precincts,-37.829,144.957,"https://en.wikipedia.org/wiki/Southbank,_Victoria",South Melbourne
+6,Sports and Entertainment Precinct,City precincts,-37.81667,144.98333,https://en.wikipedia.org/wiki/Melbourne_Sports_and_Entertainment_Precinct,East Melbourne
+7,University of Melbourne,City precincts,-37.7963,144.9614,https://en.wikipedia.org/wiki/University_of_Melbourne,Parkville
+8,Block Arcade,Shopping,-37.81583,144.96444,"https://en.wikipedia.org/wiki/Block_Arcade,_Melbourne",Melbourne
+9,Bourke Street,Shopping,-37.8139,144.96452,"https://en.wikipedia.org/wiki/Bourke_Street,_Melbourne",Melbourne
+10,Bridge Road,Shopping,-37.817563899999996,144.99032780000002,"https://en.wikipedia.org/wiki/Bridge_Road,_Melbourne",Richmond (Vic.)
+11,Brunswick Street,Shopping,-37.79833,144.978472,"https://en.wikipedia.org/wiki/Brunswick_Street,_Melbourne",Fitzroy
+12,Chapel Street,Shopping,-37.84083,144.99528,"https://en.wikipedia.org/wiki/Chapel_Street,_Melbourne",South Yarra - East
+13,Centre Place,Shopping,-37.816583,144.9655,"https://en.wikipedia.org/wiki/Centre_Place,_Melbourne",Melbourne
+14,Collins Street,Shopping,-37.8168,144.9622,"https://en.wikipedia.org/wiki/Collins_Street,_Melbourne",Melbourne
+15,Degraves Street,Shopping,-37.8175,144.96583,"https://en.wikipedia.org/wiki/Degraves_Street,_Melbourne",Melbourne
+16,Elizabeth Street,Shopping,-37.8096,144.961,"https://en.wikipedia.org/wiki/Elizabeth_Street,_Melbourne",Melbourne
+17,Flinders Lane,Shopping,-37.81694,144.96556,"https://en.wikipedia.org/wiki/Flinders_Lane,_Melbourne",Melbourne
+18,Little Collins Street,Shopping,-37.8151,144.9641,"https://en.wikipedia.org/wiki/Little_Collins_Street,_Melbourne",Melbourne
+19,Melbourne Central Shopping Centre,Shopping,-37.810559999999995,144.96,https://en.wikipedia.org/wiki/Melbourne_Central_Shopping_Centre,Melbourne
+20,Pran Central,Shopping,-37.847414,144.993503,https://en.wikipedia.org/wiki/Pran_Central,Prahran - Windsor
+21,Queen Victoria Market,Shopping,-37.806965999999996,144.956693,https://en.wikipedia.org/wiki/Queen_Victoria_Market,Melbourne
+22,Queen Victoria Village,Shopping,-37.81,144.9652,https://en.wikipedia.org/wiki/Queen_Victoria_Village,Melbourne
+23,Royal Arcade,Shopping,-37.8145,144.9641,"https://en.wikipedia.org/wiki/Royal_Arcade,_Melbourne",Melbourne
+24,Swanston Street,Shopping,-37.8064,144.963,"https://en.wikipedia.org/wiki/Swanston_Street,_Melbourne",Carlton
+25,Crown Casino and Entertainment Complex,Entertainment,-37.822324,144.96009899999999,https://en.wikipedia.org/wiki/Crown_Casino_and_Entertainment_Complex,Southbank
+26,Luna Park,Entertainment,-37.868036,144.976369,"https://en.wikipedia.org/wiki/Luna_Park,_Melbourne",St Kilda
+27,Melbourne Aquarium,Entertainment,-37.821044,144.95801699999998,https://en.wikipedia.org/wiki/Sea_Life_Melbourne_Aquarium,Melbourne
+28,Melbourne Zoo,Entertainment,-37.784762,144.95209499999999,https://en.wikipedia.org/wiki/Melbourne_Zoo,Parkville
+29,Australian Centre for Contemporary Art,Public galleries,-37.826496999999996,144.96701399999998,https://en.wikipedia.org/wiki/Australian_Centre_for_Contemporary_Art,Southbank
+30,Ian Potter Museum of Art,Public galleries,-37.7975,144.964111,https://en.wikipedia.org/wiki/Ian_Potter_Museum_of_Art,Parkville
+31,NGV International,Public galleries,-37.822595,144.968634,https://en.wikipedia.org/wiki/National_Gallery_of_Victoria,Southbank
+32,General Post Office,Institutions,-37.81384,144.963028,https://en.wikipedia.org/wiki/Melbourne_General_Post_Office,Melbourne
+33,Government House,Institutions,-37.827939,144.976939,"https://en.wikipedia.org/wiki/Government_House,_Melbourne",Southbank
+34,Melbourne Observatory,Institutions,-37.8297,144.9755,https://en.wikipedia.org/wiki/Melbourne_Observatory,Southbank
+35,Melbourne Town Hall,Institutions,-37.815145,144.966777,https://en.wikipedia.org/wiki/Melbourne_Town_Hall,Melbourne
+36,Old Melbourne Gaol,Institutions,-37.80806,144.96528,https://en.wikipedia.org/wiki/Old_Melbourne_Gaol,Melbourne
+37,Old Melbourne Magistrates' Court,Institutions,-37.8087,144.966,https://en.wikipedia.org/wiki/Former_Melbourne_Magistrates%27_Court,Melbourne
+38,Old Melbourne Mint,Institutions,-37.812153,144.956794,https://en.wikipedia.org/wiki/Melbourne_Mint,Melbourne
+39,Old Treasury Building,Institutions,-37.813153,144.974121,"https://en.wikipedia.org/wiki/Old_Treasury_Building,_Melbourne",East Melbourne
+40,Parliament House,Institutions,-37.811054999999996,144.97329,"https://en.wikipedia.org/wiki/Parliament_House,_Melbourne",East Melbourne
+41,State Library of Victoria,Institutions,-37.809801,144.964787,https://en.wikipedia.org/wiki/State_Library_of_Victoria,Melbourne
+42,Supreme Court of Victoria,Institutions,-37.814132,144.957932,https://en.wikipedia.org/wiki/Supreme_Court_of_Victoria,Melbourne
+43,Victoria Barracks,Institutions,-37.827391,144.970447,"https://en.wikipedia.org/wiki/Victoria_Barracks,_Melbourne",Southbank
+44,Arts Centre,Structures,-37.82028,144.96833,https://en.wikipedia.org/wiki/Arts_Centre_Melbourne,Southbank
+45,Eureka Tower,Structures,-37.821670000000005,144.96444,https://en.wikipedia.org/wiki/Eureka_Tower,Southbank
+46,Melbourne Convention and Exhibition Centre,Structures,-37.8256,144.9541,https://en.wikipedia.org/wiki/Melbourne_Convention_and_Exhibition_Centre,Southbank
+47,Melbourne Star,Structures,-37.8110723,144.9368763,https://en.wikipedia.org/wiki/Melbourne_Star,Docklands
+48,Royal Exhibition Building,Structures,-37.804728000000004,144.971225,https://en.wikipedia.org/wiki/Royal_Exhibition_Building,Carlton
+49,Shrine of Remembrance,Structures,-37.830434000000004,144.97325800000002,https://en.wikipedia.org/wiki/Shrine_of_Remembrance,Southbank
+50,St Paul's Cathedral,Structures,-37.816853,144.967384,"https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral,_Melbourne",Melbourne
+51,St Patrick's Cathedral,Structures,-37.81,144.97611,"https://en.wikipedia.org/wiki/St_Patrick%27s_Cathedral,_Melbourne",East Melbourne
+52,Melbourne Rectangular Stadium (AAMI Park),Sports stadiums,-37.82528,144.98389,https://en.wikipedia.org/wiki/Melbourne_Rectangular_Stadium,East Melbourne
+53,Docklands Stadium (Etihad Stadium),Sports stadiums,-37.816390000000006,144.9475,https://en.wikipedia.org/wiki/Docklands_Stadium,Docklands
+54,Flemington Racecourse,Sports stadiums,-37.790279999999996,144.9125,https://en.wikipedia.org/wiki/Flemington_Racecourse,Flemington Racecourse
+55,Margaret Court Arena,Sports stadiums,-37.821112,144.97741000000002,https://en.wikipedia.org/wiki/Margaret_Court_Arena,East Melbourne
+56,Melbourne Multi Purpose Venue (Hisense Arena),Sports stadiums,-37.82278,144.98167,https://en.wikipedia.org/wiki/Melbourne_Park_Multi-Purpose_Venue,East Melbourne
+57,Melbourne Cricket Ground (MCG),Sports stadiums,-37.82,144.98333,https://en.wikipedia.org/wiki/Melbourne_Cricket_Ground,East Melbourne
+58,Melbourne Grand Prix Circuit,Sports stadiums,-37.84972,144.96833,https://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit,Albert Park
+59,Melbourne Sports and Aquatic Centre (MSAC),Sports stadiums,-37.84667,144.96611000000001,https://en.wikipedia.org/wiki/Melbourne_Sports_and_Aquatic_Centre,Albert Park
+60,Lakeside Stadium,Sports stadiums,-37.84028,144.965,https://en.wikipedia.org/wiki/Lakeside_Stadium,Albert Park
+61,National Ice Sports Centre (O'Brien Group Arena),Sports stadiums,-37.8123777,144.93556740000002,https://en.wikipedia.org/wiki/Medibank_Icehouse,Docklands
+62,Olympic Park Stadium,Sports stadiums,-37.82472,144.98111,https://en.wikipedia.org/wiki/Olympic_Park_Stadium,East Melbourne
+63,Rod Laver Arena,Sports stadiums,-37.821670000000005,144.97833,https://en.wikipedia.org/wiki/Rod_Laver_Arena,East Melbourne
+64,Royal Melbourne Golf Club,Sports stadiums,-37.97,145.03,https://en.wikipedia.org/wiki/Royal_Melbourne_Golf_Club,Beaumaris
+65,Princes Park (Ikon Park),Sports stadiums,-37.78389,144.96167,https://en.wikipedia.org/wiki/Princes_Park_(stadium),Carlton North - Princes Hill
+66,Albert Park and Lake,Parks and spaces,-37.846,144.97,https://en.wikipedia.org/wiki/Albert_Park_and_Lake,Albert Park
+67,Alexandra Gardens,Parks and spaces,-37.820370000000004,144.971938,"https://en.wikipedia.org/wiki/Alexandra_Gardens,_Melbourne",Southbank
+68,Birrarung Marr,Parks and spaces,-37.818329999999996,144.9725,"https://en.wikipedia.org/wiki/Birrarung_Marr,_Melbourne",East Melbourne
+69,Carlton Gardens,Parks and spaces,-37.80611,144.97028,https://en.wikipedia.org/wiki/Carlton_Gardens,Carlton
+70,City Square,Parks and spaces,-37.816,144.967,"https://en.wikipedia.org/wiki/City_Square,_Melbourne",Melbourne
+71,Federation Square,Parks and spaces,-37.817797999999996,144.96871399999998,https://en.wikipedia.org/wiki/Federation_Square,East Melbourne
+72,Fitzroy Gardens,Parks and spaces,-37.8125641,144.9803925,https://en.wikipedia.org/wiki/Fitzroy_Gardens,East Melbourne
+73,Flagstaff Gardens,Parks and spaces,-37.8105,144.9544,https://en.wikipedia.org/wiki/Flagstaff_Gardens,North Melbourne
+74,Kings Domain,Parks and spaces,-37.8282598,144.97758149999999,"https://en.wikipedia.org/wiki/Kings_Domain,_Melbourne",Southbank
+75,Queen Victoria Gardens,Parks and spaces,-37.8218,144.9716,"https://en.wikipedia.org/wiki/Queen_Victoria_Gardens,_Melbourne",Southbank
+76,Royal Botanic Gardens,Parks and spaces,-37.8334,144.98033,"https://en.wikipedia.org/wiki/Royal_Botanic_Gardens,_Melbourne",Southbank
+77,Royal Park,Parks and spaces,-37.790183299999995,144.9511667,"https://en.wikipedia.org/wiki/Royal_Park,_Melbourne",Parkville
+78,Treasury Gardens,Parks and spaces,-37.814158,144.976194,https://en.wikipedia.org/wiki/Treasury_Gardens,East Melbourne
+79,Yarra Park,Parks and spaces,-37.818043700000004,144.9852312,https://en.wikipedia.org/wiki/Yarra_Park,East Melbourne
+80,Bolte Bridge,Transport,-37.8194778,144.932125,https://en.wikipedia.org/wiki/Bolte_Bridge,Docklands
+81,Capital City Trail,Transport,-37.819744,144.968516,https://en.wikipedia.org/wiki/Capital_City_Trail,Southbank
+82,Flinders Street station,Transport,-37.818078,144.96681,https://en.wikipedia.org/wiki/Flinders_Street_railway_station,Melbourne
+83,Melbourne Airport,Transport,-37.67333,144.84333,https://en.wikipedia.org/wiki/Melbourne_Airport,Melbourne Airport
+84,Melbourne Central station,Transport,-37.81,144.96278,https://en.wikipedia.org/wiki/Melbourne_Central_railway_station,Melbourne
+85,Southern Cross station,Transport,-37.8184,144.9524,https://en.wikipedia.org/wiki/Southern_Cross_railway_station,Docklands
+86,West Gate Bridge,Transport,-37.829440000000005,144.89806000000002,https://en.wikipedia.org/wiki/West_Gate_Bridge,Newport
+87,Yarra River,Transport,-37.85194,144.90833,https://en.wikipedia.org/wiki/Yarra_River,
