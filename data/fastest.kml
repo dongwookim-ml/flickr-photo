@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="001">
+    <name>Trajectories</name>
+    <description>Trajectory visualization</description>
+    <visibility>1</visibility>
+    <Style id="style1">
+      <LineStyle>
+        <color>2f0000ff</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Placemark id="7444">
+      <name>Trajectory_7444_fastest_traj</name>
+      <description>User_ID: 32005048@N06&lt;br/&gt;Start_Time: 2011-08-24 09:53:16&lt;br/&gt;Travel_Distance: 182.71 km&lt;br/&gt;Total_Time: 110.9 min&lt;br/&gt;Average_Speed: 98.85 km/h&lt;br/&gt;#Photos: 82&lt;br/&gt;Photos: [6081352907, 6081354271, 6081895534, 6081382213, 6081384027, 6079002016, 6078464969, 6077706241, 6077708209, 6078466259, 6086910561, 6087457816, 6086914541, 6086916495, 6094265117, 6094805044, 6094806996, 6094271035, 6094274517, 6094817332, 6080850369, 6081467936, 6080934551, 6078332960, 6078333390, 6095482062, 6095483952, 6095486006, 6091981574, 6091442481, 6095311135, 6095854012, 6095855524, 6095856290, 6095859650, 6095998036, 6095998756, 6084014378, 6084016518, 6081586974, 6081590404, 6081056483, 6087154757, 6087156799, 6087157935, 6091995868, 6091455929, 6098364328, 6081472574, 6078275182, 6078277476, 6078278668, 6077741267, 6078281928, 6083482043, 6081035711, 6081036773, 6081038337, 6083497489, 6098717257, 6098718683, 6098721651, 6097821127, 6098371760, 6091346373, 6091347939, 6091350497, 6083499277, 6087520696, 6086976965, 6083501177, 6087608219, 6088156594, 6088158228, 6087614247, 6088161498, 6078249934, 6078251908, 6097675525, 6098225658, 6098228476, 6098230628]</description>
+      <visibility>1</visibility>
+      <styleUrl>#style1</styleUrl>
+      <LineString>
+        <coordinates>144.363600,-37.673000 144.363600,-37.673000 144.363600,-37.673000 144.363600,-37.673000 144.363600,-37.673000 144.361700,-37.671600 144.361700,-37.671600 144.360400,-37.670800 144.360400,-37.670800 144.361700,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.357700,-37.669800 144.357700,-37.669800 144.357700,-37.669800 144.357700,-37.669800 144.357700,-37.669800 144.357700,-37.669800 144.359100,-37.670400 144.358700,-37.670300 144.358700,-37.670300 144.355700,-37.668500 144.355700,-37.668500 144.358600,-37.670200 144.358600,-37.670200 144.358600,-37.670200 144.358500,-37.670200 144.358500,-37.670200 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.758700,-37.670300 144.758700,-37.670300 144.356200,-37.669200 144.356200,-37.669200 144.356200,-37.669200 144.355900,-37.668800 144.355900,-37.668800 144.355900,-37.668800 144.356600,-37.669200 144.356600,-37.669200 144.353900,-37.666500 144.358700,-37.670300 144.355700,-37.668400 144.355700,-37.668400 144.355700,-37.668400 144.355700,-37.668400 144.355700,-37.668400 144.758700,-37.670300 144.354600,-37.667000 144.354600,-37.667000 144.354600,-37.667000 144.354600,-37.667000 144.358500,-37.670200 144.358500,-37.670200 144.358500,-37.670200 144.353900,-37.666500 144.353900,-37.666500 144.353900,-37.665500 144.353900,-37.665500 144.353900,-37.666500 144.354600,-37.667000 144.355900,-37.668800 144.355900,-37.668800 144.354600,-37.667000 144.560400,-37.670800 144.560400,-37.670800 144.560400,-37.670800 144.560400,-37.670800 144.560400,-37.670800 144.360400,-37.670800 144.360400,-37.670800 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600 144.362000,-37.671600</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="6081352907">
+      <name>Photo_6081352907</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081352907&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 09:53:16&lt;br/&gt;Coordinates: (144.3636, -37.673)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081352907/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.363600,-37.673000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081354271">
+      <name>Photo_6081354271</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081354271&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 09:53:37&lt;br/&gt;Coordinates: (144.3636, -37.673)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081354271/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.363600,-37.673000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081895534">
+      <name>Photo_6081895534</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081895534&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 09:54:12&lt;br/&gt;Coordinates: (144.3636, -37.673)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081895534/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.363600,-37.673000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081382213">
+      <name>Photo_6081382213</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081382213&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 09:55:31&lt;br/&gt;Coordinates: (144.3636, -37.673)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081382213/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.363600,-37.673000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081384027">
+      <name>Photo_6081384027</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081384027&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 09:55:56&lt;br/&gt;Coordinates: (144.3636, -37.673)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081384027/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.363600,-37.673000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6079002016">
+      <name>Photo_6079002016</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6079002016&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:00:41&lt;br/&gt;Coordinates: (144.3617, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6079002016/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.361700,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078464969">
+      <name>Photo_6078464969</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078464969&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:00:56&lt;br/&gt;Coordinates: (144.3617, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078464969/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.361700,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6077706241">
+      <name>Photo_6077706241</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6077706241&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:04:27&lt;br/&gt;Coordinates: (144.3604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6077706241/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.360400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6077708209">
+      <name>Photo_6077708209</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6077708209&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:04:50&lt;br/&gt;Coordinates: (144.3604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6077708209/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.360400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078466259">
+      <name>Photo_6078466259</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078466259&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:08:51&lt;br/&gt;Coordinates: (144.3617, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078466259/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.361700,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6086910561">
+      <name>Photo_6086910561</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6086910561&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:10:24&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6086910561/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087457816">
+      <name>Photo_6087457816</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087457816&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:11:06&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087457816/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6086914541">
+      <name>Photo_6086914541</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6086914541&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:11:18&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6086914541/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6086916495">
+      <name>Photo_6086916495</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6086916495&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:11:57&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6086916495/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094265117">
+      <name>Photo_6094265117</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094265117&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:13:39&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094265117/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094805044">
+      <name>Photo_6094805044</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094805044&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:13:49&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094805044/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094806996">
+      <name>Photo_6094806996</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094806996&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:14:00&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094806996/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094271035">
+      <name>Photo_6094271035</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094271035&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:14:08&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094271035/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094274517">
+      <name>Photo_6094274517</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094274517&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:14:46&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094274517/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6094817332">
+      <name>Photo_6094817332</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6094817332&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:15:01&lt;br/&gt;Coordinates: (144.3577, -37.6698)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6094817332/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.357700,-37.669800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6080850369">
+      <name>Photo_6080850369</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6080850369&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:16:29&lt;br/&gt;Coordinates: (144.3591, -37.6704)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6080850369/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.359100,-37.670400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081467936">
+      <name>Photo_6081467936</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081467936&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:19:44&lt;br/&gt;Coordinates: (144.3587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081467936/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6080934551">
+      <name>Photo_6080934551</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6080934551&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:20:17&lt;br/&gt;Coordinates: (144.3587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6080934551/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078332960">
+      <name>Photo_6078332960</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078332960&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:20:36&lt;br/&gt;Coordinates: (144.3557, -37.6685)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078332960/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078333390">
+      <name>Photo_6078333390</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078333390&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:21:05&lt;br/&gt;Coordinates: (144.3557, -37.6685)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078333390/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095482062">
+      <name>Photo_6095482062</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095482062&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:24:46&lt;br/&gt;Coordinates: (144.3586, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095482062/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358600,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095483952">
+      <name>Photo_6095483952</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095483952&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:25:10&lt;br/&gt;Coordinates: (144.3586, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095483952/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358600,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095486006">
+      <name>Photo_6095486006</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095486006&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:25:33&lt;br/&gt;Coordinates: (144.3586, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095486006/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358600,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091981574">
+      <name>Photo_6091981574</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091981574&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:27:25&lt;br/&gt;Coordinates: (144.3585, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091981574/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358500,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091442481">
+      <name>Photo_6091442481</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091442481&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:27:47&lt;br/&gt;Coordinates: (144.3585, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091442481/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358500,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095311135">
+      <name>Photo_6095311135</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095311135&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:30:18&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095311135/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095854012">
+      <name>Photo_6095854012</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095854012&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:30:42&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095854012/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095855524">
+      <name>Photo_6095855524</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095855524&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:30:49&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095855524/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095856290">
+      <name>Photo_6095856290</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095856290&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:31:02&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095856290/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095859650">
+      <name>Photo_6095859650</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095859650&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:31:13&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095859650/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095998036">
+      <name>Photo_6095998036</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095998036&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:32:49&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095998036/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6095998756">
+      <name>Photo_6095998756</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6095998756&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:33:55&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6095998756/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6084014378">
+      <name>Photo_6084014378</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6084014378&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:37:11&lt;br/&gt;Coordinates: (144.7587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6084014378/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.758700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6084016518">
+      <name>Photo_6084016518</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6084016518&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:37:19&lt;br/&gt;Coordinates: (144.7587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6084016518/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.758700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081586974">
+      <name>Photo_6081586974</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081586974&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:41:18&lt;br/&gt;Coordinates: (144.3562, -37.6692)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081586974/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.356200,-37.669200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081590404">
+      <name>Photo_6081590404</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081590404&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:41:53&lt;br/&gt;Coordinates: (144.3562, -37.6692)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081590404/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.356200,-37.669200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081056483">
+      <name>Photo_6081056483</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081056483&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:42:05&lt;br/&gt;Coordinates: (144.3562, -37.6692)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081056483/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.356200,-37.669200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087154757">
+      <name>Photo_6087154757</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087154757&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:42:22&lt;br/&gt;Coordinates: (144.3559, -37.6688)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087154757/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355900,-37.668800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087156799">
+      <name>Photo_6087156799</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087156799&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:42:56&lt;br/&gt;Coordinates: (144.3559, -37.6688)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087156799/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355900,-37.668800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087157935">
+      <name>Photo_6087157935</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087157935&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:43:20&lt;br/&gt;Coordinates: (144.3559, -37.6688)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087157935/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355900,-37.668800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091995868">
+      <name>Photo_6091995868</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091995868&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:46:18&lt;br/&gt;Coordinates: (144.3566, -37.6692)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091995868/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.356600,-37.669200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091455929">
+      <name>Photo_6091455929</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091455929&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:46:46&lt;br/&gt;Coordinates: (144.3566, -37.6692)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091455929/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.356600,-37.669200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098364328">
+      <name>Photo_6098364328</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098364328&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:48:35&lt;br/&gt;Coordinates: (144.3539, -37.6665)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098364328/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.666500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081472574">
+      <name>Photo_6081472574</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081472574&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:49:03&lt;br/&gt;Coordinates: (144.3587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081472574/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078275182">
+      <name>Photo_6078275182</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078275182&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:54:37&lt;br/&gt;Coordinates: (144.3557, -37.6684)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078275182/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078277476">
+      <name>Photo_6078277476</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078277476&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:54:52&lt;br/&gt;Coordinates: (144.3557, -37.6684)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078277476/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078278668">
+      <name>Photo_6078278668</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078278668&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:55:33&lt;br/&gt;Coordinates: (144.3557, -37.6684)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078278668/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6077741267">
+      <name>Photo_6077741267</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6077741267&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:55:52&lt;br/&gt;Coordinates: (144.3557, -37.6684)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6077741267/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078281928">
+      <name>Photo_6078281928</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078281928&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:56:14&lt;br/&gt;Coordinates: (144.3557, -37.6684)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078281928/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355700,-37.668400</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6083482043">
+      <name>Photo_6083482043</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6083482043&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 10:58:55&lt;br/&gt;Coordinates: (144.7587, -37.6703)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6083482043/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.758700,-37.670300</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081035711">
+      <name>Photo_6081035711</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081035711&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:04:23&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081035711/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081036773">
+      <name>Photo_6081036773</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081036773&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:04:39&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081036773/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6081038337">
+      <name>Photo_6081038337</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6081038337&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:05:01&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6081038337/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6083497489">
+      <name>Photo_6083497489</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6083497489&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:08:08&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6083497489/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098717257">
+      <name>Photo_6098717257</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098717257&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:10:23&lt;br/&gt;Coordinates: (144.3585, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098717257/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358500,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098718683">
+      <name>Photo_6098718683</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098718683&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:10:56&lt;br/&gt;Coordinates: (144.3585, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098718683/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358500,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098721651">
+      <name>Photo_6098721651</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098721651&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:11:11&lt;br/&gt;Coordinates: (144.3585, -37.6702)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098721651/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.358500,-37.670200</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6097821127">
+      <name>Photo_6097821127</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6097821127&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:11:50&lt;br/&gt;Coordinates: (144.3539, -37.6665)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6097821127/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.666500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098371760">
+      <name>Photo_6098371760</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098371760&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:11:59&lt;br/&gt;Coordinates: (144.3539, -37.6665)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098371760/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.666500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091346373">
+      <name>Photo_6091346373</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091346373&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:15:13&lt;br/&gt;Coordinates: (144.3539, -37.6655)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091346373/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.665500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091347939">
+      <name>Photo_6091347939</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091347939&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:15:48&lt;br/&gt;Coordinates: (144.3539, -37.6655)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091347939/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.665500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6091350497">
+      <name>Photo_6091350497</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6091350497&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:15:59&lt;br/&gt;Coordinates: (144.3539, -37.6665)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6091350497/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.353900,-37.666500</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6083499277">
+      <name>Photo_6083499277</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6083499277&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:16:28&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6083499277/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087520696">
+      <name>Photo_6087520696</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087520696&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:24:10&lt;br/&gt;Coordinates: (144.3559, -37.6688)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087520696/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355900,-37.668800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6086976965">
+      <name>Photo_6086976965</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6086976965&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:24:43&lt;br/&gt;Coordinates: (144.3559, -37.6688)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6086976965/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.355900,-37.668800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6083501177">
+      <name>Photo_6083501177</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6083501177&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:27:00&lt;br/&gt;Coordinates: (144.3546, -37.667)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6083501177/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.354600,-37.667000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087608219">
+      <name>Photo_6087608219</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087608219&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:36:08&lt;br/&gt;Coordinates: (144.5604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087608219/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.560400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6088156594">
+      <name>Photo_6088156594</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6088156594&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:36:18&lt;br/&gt;Coordinates: (144.5604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6088156594/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.560400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6088158228">
+      <name>Photo_6088158228</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6088158228&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:36:37&lt;br/&gt;Coordinates: (144.5604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6088158228/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.560400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6087614247">
+      <name>Photo_6087614247</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6087614247&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:36:45&lt;br/&gt;Coordinates: (144.5604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6087614247/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.560400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6088161498">
+      <name>Photo_6088161498</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6088161498&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:37:00&lt;br/&gt;Coordinates: (144.5604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6088161498/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.560400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078249934">
+      <name>Photo_6078249934</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078249934&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:38:39&lt;br/&gt;Coordinates: (144.3604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078249934/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.360400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6078251908">
+      <name>Photo_6078251908</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6078251908&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:39:09&lt;br/&gt;Coordinates: (144.3604, -37.6708)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6078251908/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.360400,-37.670800</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6097675525">
+      <name>Photo_6097675525</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6097675525&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:43:43&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6097675525/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098225658">
+      <name>Photo_6098225658</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098225658&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:43:55&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098225658/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098228476">
+      <name>Photo_6098228476</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098228476&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:44:05&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098228476/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="6098230628">
+      <name>Photo_6098230628</name>
+      <description>Trajectory_ID: 7444&lt;br/&gt;Photo_ID: 6098230628&lt;br/&gt;User_ID: 32005048@N06&lt;br/&gt;Timestamp: 2011-08-24 11:44:10&lt;br/&gt;Coordinates: (144.362, -37.6716)&lt;br/&gt;Accuracy: 16&lt;br/&gt;URL: http://www.flickr.com/photos/32005048@N06/6098230628/</description>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>144.362000,-37.671600</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
