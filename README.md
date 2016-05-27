@@ -83,7 +83,7 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * trajLen: Number of POIs in the trajectory
   * poiDuration: Visit duration (in seconds) at the POI
 
- * ```data/Melb_recommendations.csv``` Trajectory recommendation results of different methods using ```data/poi-Melb-all.csv``` and ```data/traj-noloop-all-Melb.csv```, ```NA``` represent failed recommendation due to e.g. ILP timeout.
+ * ```data/Melb_recommendations.csv``` Trajectory recommendation results of different methods using ```data/poi-Melb-all.csv``` and ```data/traj-noloop-all-Melb.csv```. Recommendation results are obtained from each algorithm given the first and last POIs and length of the real trajectory. ```NA``` represent failed recommendation due to e.g. ILP timeout.
   * trajID: Trajectory ID
   * REAL: The ground truth trajectory
   * PoiPopularity: Trajectory recommended using POI popularity only
