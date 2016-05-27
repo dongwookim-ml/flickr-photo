@@ -83,6 +83,20 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * trajLen: Number of POIs in the trajectory
   * poiDuration: Visit duration (in seconds) at the POI
 
+ * ```data/Melb_recommendations.csv``` Trajectory recommendation results of different methods using ```data/poi-Melb-all.csv``` and ```data/traj-noloop-all-Melb.csv```, ```NA``` represent failed recommendation due to e.g. ILP timeout.
+  * trajID: Trajectory ID
+  * REAL: The ground truth trajectory
+  * PoiPopularity: Trajectory recommended using POI popularity only
+  * PoiRank: Trajectory recommended using POI ranking by rankSVM
+  * Markov: Trajectory recommended using POI-POI transition matrix and Viterbi decoding
+  * MarkovPath: Trajectory recommended using POI-POI transition matrix and integer linear programming (ILP)
+  * Rank+Markov: Trajectory recommended using both POI ranking by rankSVM and POI-POI transition matrix, and Viterbi decoding
+  * Rank+MarkovPath: Trajectory recommended using both POI ranking by rankSVM and POI-POI transition matrix, and ILP 
+  * StructuredSVM: Trajectory recommended using Structured Support Vector Machine
+  * PersTour: Trajectory recommended using method described in [this paper](https://www.nicta.com.au/pub-download/full/8557/)
+  * PersTour-L: Trajectory recommended by a method similar to PersTour, with time constraint replaced by length constraint
+
+
  * Visualisation: Please import these KMZ files to [Google My Maps](https://www.google.com/mymaps) to visualise.
   * ```data/Melb_POI.kmz``` POIs in Melbourne dataset.
   * ```data/Melb_transition_most_popular_POI.kmz``` Transitions from the most popular POI, i.e., the Federation Square.
