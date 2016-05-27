@@ -72,3 +72,17 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * poiTheme: POI Category
   * poiFreq: Number of photos taken at the POI
   * seqID: Trajectory unique ID
+
+ * Visualisation: Please import these KMZ files to [Google My Maps](https://www.google.com/mymaps) to visualise.
+  * ```data/Melb_POI.kmz``` POIs in Melbourne dataset.
+  * ```data/Melb_transition_most_popular_POI.kmz``` Transitions from the most popular POI, i.e., the Federation Square.
+  * ```data/Melb_transition_Margaret_Court_Arena.kmz``` Transitions from the Margaret Court Arena.
+  * ```data/Melb_transition_Queen_Victoria_Market.kmz``` Transitions from the Queen Victoria Market.
+  * ```data/Melb_transition_RMIT_city.kmz``` Transitions from the RMIT city.
+  * ```data/Melb_transition_RMIT_city_top30.kmz``` Top 30 transitions from the RMIT city.
+  * ```data/Melb_transition_University_of_Melbourne.kmz``` Transitions from the University of Melbourne.
+  * ```data/Melb_transition_University_of_Melbourne_top30.kmz``` Top 30 transitions from the University of Melbourne.
+  * ```data/Melb_traj_pass_Government_House.kmz``` Trajectories that include the Government House.
+  * ```data/Melb_traj_pass_Melbourne_Cricket_Ground.kmz``` Trajectories that include the Melbourne Cricket Ground (MCG).
+  * ```data/Melb_traj_recommendation_example.kmz``` Example of trajectories recommended by different approaches.
+  * ```data/Melb_terrible_traj_photo_seq.kmz``` Example of an ugly trajectory.
