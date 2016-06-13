@@ -83,7 +83,7 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * trajLen: Number of POIs in the trajectory
   * poiDuration: Visit duration (in seconds) at the POI
 
- * ```data/Melb_recommendations.csv``` Trajectory recommendation results of different methods using ```data/poi-Melb-all.csv``` and ```data/traj-noloop-all-Melb.csv```. Recommendation results are obtained from each algorithm given the first and last POIs and length of the real trajectory. ```NA``` represent failed recommendation due to e.g. ILP timeout.
+ * ```data/Melb_recommendations.csv``` Trajectory recommendation results of different methods using ```data/poi-Melb-all.csv``` and ```data/traj-noloop-all-Melb.csv```. Recommendation results are obtained from each algorithm given the first and last POIs and length of the real trajectory. ```NA``` represent failed recommendation due to e.g. ILP timeout. ```data/Melb_recommendations_F1.csv``` is the file with F1-scores of the recommended trajectories by different methods and ```data/Melb_recommendations_pairsF1.csv``` is the file with pairs-F1-scores.
   * trajID: Trajectory ID
   * REAL: The ground truth trajectory
   * PoiPopularity: Trajectory recommended using POI popularity only
@@ -95,7 +95,6 @@ Some statistics and analysis about the extracted trajectories are provided in [`
   * StructuredSVM: Trajectory recommended using Structured Support Vector Machine
   * PersTour: Trajectory recommended using method described in [this paper](https://www.nicta.com.au/pub-download/full/8557/)
   * PersTour-L: Trajectory recommended by a method similar to PersTour, with time constraint replaced by length constraint
-
 
  * Visualisation: Please import these KMZ files to [Google My Maps](https://www.google.com/mymaps) to visualise.
   * ```data/Melb_POI.kmz``` POIs in Melbourne dataset.
