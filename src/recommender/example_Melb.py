@@ -8,7 +8,7 @@ if __name__ == '__main__':
     fmodel = 'model-Melb.pkl'  # path of the trained model file
     model = pkl.load(open(fmodel, 'rb'))['MODEL']  # trained model
     
-    startPOI = 9  # the start POI-ID for the desired trajectory, can be any POI-ID in poi-Melb-all.csv
+    startPOI = 9  # the start POI-ID for the desired trajectory, can be any POI-ID in flickr-photo/data/poi-Melb-all.csv
     length = 8    # the length of desired trajectory: the number of POIs in trajectory (including start POI)
                   # if length > 8, the inference could be slow
 
